@@ -34,7 +34,7 @@
     font-family: "AsapRegular", sans-serif;
 }
 
-@mixin asapBold {
+@mixin asapMedium {
     font-family: "AsapMedium", sans-serif;
 }
 
@@ -42,6 +42,10 @@
     font-family: "AsapSemiBold", sans-serif;
 }
 
-@mixin asapSemiBold {
+@mixin asapItalic {
     font-family: "AsapItalic", sans-serif;
+}
+
+@mixin asapBold {
+    font-family: "AsapBold", sans-serif;
 }
