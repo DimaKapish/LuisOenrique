@@ -42,6 +42,7 @@
 /*Миксины для шрифтов*/
 body {
   font-family: "AsapRegular", sans-serif;
+  overflow: hidden;
 }
 
 .navbar__block {
@@ -77,10 +78,35 @@ body {
           justify-content: space-between;
 }
 
+.navbar__block-menu-list-item {
+  padding-left: 20px;
+}
+
 .navbar__block-menu-list-item a {
   font-size: 16px;
   color: #515151;
   text-decoration: none;
+  font-family: "AsapRegular", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navbar__block-menu-list-item a:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #878787;
+  width: 0;
+  height: 2px;
+  opacity: 0;
+  -webkit-transition: .25s ease all;
+  transition: .25s ease all;
+}
+
+.navbar__block-menu-list-item a:hover:before {
+  width: 100%;
+  opacity: 1;
 }
 
 .header {
@@ -89,7 +115,6 @@ body {
   background-size: cover;
   background-position: center;
   max-width: 100%;
-  min-height: 100vh;
-  height: 100%;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

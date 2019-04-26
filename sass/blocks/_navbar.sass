@@ -14,7 +14,26 @@
             list-style-type: none
             justify-content: space-between
             &-item
+                padding-left: 20px
+                
                 a
                     font-size: 16px
                     color:  #515151   
                     text-decoration: none 
+                    +asapRegular
+                    text-transform: uppercase
+                    position: relative
+                    &:before
+                        content: ''
+                        position: absolute
+                        bottom: -5px
+                        left: 0 
+                        background-color: #878787
+                        width: 0
+                        height: 2px
+                        opacity: 0
+                        transition: .25s ease all
+                    &:hover:before
+                        width: 100%
+                        opacity: 1    
+
