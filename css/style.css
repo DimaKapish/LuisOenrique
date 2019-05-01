@@ -78,6 +78,26 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.section-title {
+  font-family: "AsapBold", sans-serif;
+  font-size: 46px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  position: relative;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.section-title:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 47.5%;
+  width: 5%;
+  height: 4px;
+  background-color: #4d4d4d;
+}
+
 .button {
   font-size: 16px;
   background-color: #ffffff;
@@ -399,6 +419,53 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 376px) {
   .about__block-text .title {
     font-size: 30px;
+  }
+}
+
+.services {
+  background-color: #f6f6f6;
+}
+
+.services__block_service-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.services__block_service-wrapper-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 33.3%;
+  padding-bottom: 50px;
+}
+
+.services__block_service-wrapper-item-text {
+  font-size: 20px;
+  padding-top: 15px;
+  color: #4d4d4d;
+}
+
+@media (max-width: 768px) {
+  .services__block_service-wrapper-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 460px) {
+  .services__block_service-wrapper-item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

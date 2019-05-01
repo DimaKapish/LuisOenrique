@@ -3,4 +3,6 @@ $(document).ready(function () {
         e.preventDefault;
         $(this).toggleClass('navbar__block-menu-burger-link-active');
     });
+
+    $('.services__block_service-wrapper-item-img').equalHeights();
 });
