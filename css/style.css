@@ -49,6 +49,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 0;
 }
 
 body {
@@ -152,6 +153,79 @@ body {
   opacity: 1;
 }
 
+.navbar__block-menu-burger-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__block-menu-burger-link span {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.navbar__block-menu-burger-link span:before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: -5px;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.navbar__block-menu-burger-link span:after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: 5px;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.navbar__block-menu-burger-link-active span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar__block-menu-burger-link-active span:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar__block-menu-burger-link-active span {
+  height: 0;
+}
+
+@media (max-width: 576px) {
+  .navbar__block-menu-list {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar__block-menu-burger {
+    display: none;
+  }
+}
+
 .header {
   background-image: url("../img/bg_header.png");
   background-repeat: no-repeat;
@@ -222,6 +296,23 @@ body {
   }
   .promo__block-img {
     display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .promo__block-text {
+    width: 100%;
+    text-align: center;
+  }
+  .promo__block-text .title {
+    font-size: 48px;
+  }
+  .promo__block-text .description {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .promo__block-text .button__group .button {
+    margin-top: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
