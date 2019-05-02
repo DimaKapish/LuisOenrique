@@ -530,4 +530,106 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
   }
 }
+
+.comment__block-wrapper-slider {
+  width: 100%;
+  border: 2px solid #212121;
+  padding: 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.comment__block-wrapper-slider-item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+
+.comment__block-wrapper-slider-item-img {
+  min-width: 20%;
+  padding-right: 20px;
+}
+
+.comment__block-wrapper-slider-item-text .name {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-family: "AsapBold", sans-serif;
+  text-transform: uppercase;
+}
+
+.comment__block-wrapper-slider-item-text .activity {
+  font-size: 13px;
+  font-family: "AsapItalic", sans-serif;
+  padding-top: 5px;
+  color: #454545;
+  letter-spacing: 1px;
+}
+
+.comment__block-wrapper-slider-item-text .comment {
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  line-height: 1.4;
+  width: 80%;
+}
+
+.slick-dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 5%;
+}
+
+.slick-dots .slick-active {
+  background-color: #212121;
+}
+
+.slick-dots li {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #212121;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.slick-dots li button:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .comment__block-wrapper-slider-item-img {
+    display: none;
+  }
+}
+
+@media (max-width: 830px) {
+  .comment__block-wrapper-slider-item {
+    padding: 20px;
+  }
+  .comment__block-wrapper-slider-item-text .comment {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
