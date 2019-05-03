@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     // EqualHeights
     $('.services__block_service-wrapper-item-img').equalHeights();
-
+    $('.advantages__block-wrapper-item-img').equalHeights();
 
     //OwlCarousel
     $('.comment__block-wrapper-slider').slick({
