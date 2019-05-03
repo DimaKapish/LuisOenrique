@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6
     display: block
     width: 100%
 
-.section-title
+.section-title, .section-title-revers
     +asapBold
     font-size: 46px
     text-transform: uppercase
@@ -30,7 +30,10 @@ h1, h2, h3, h4, h5, h6
         width: 5%
         height: 4px
         background-color: $text_color
-
+.section-title-revers
+    color: #ffffff
+    &:before
+        background-color: #ffffff
 
 .button
     font-size: 16px
